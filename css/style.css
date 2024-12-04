@@ -325,7 +325,6 @@ main section.content-about .description-about .image-about {
     margin-right: 30px;
     gap: 5px;
 }
-
 main section.content-about .description-about .image-about img {
     object-fit: cover;
     height: 450px;
@@ -354,6 +353,10 @@ main section.content-about .description-about .image-about img:hover {
 main section.content-about .description-about .image-about img:not(:hover) {
     filter: grayscale(100%) !important;
     -webkit-filter: grayscale(100%) !important;
+}
+main section.content-about .description-about .image-about img:nth-child(2) {
+    height: 500px;
+    width: 400px;
 }
 
 main section.content-about .description-about .text-about {
@@ -554,12 +557,14 @@ main section.project-container .filter-project .icon-filter i {
 
 main section.project-container .filter-project .filter-list {
     margin: 0;
+    display: flex;
 }
 
 main section.project-container .filter-project .filter-list ul {
     display: flex;
     gap: 0rem 1rem;
     padding-inline: 0;
+    flex-wrap: wrap;
 }
 
 main section.project-container .filter-project .filter-list li {
@@ -735,6 +740,37 @@ main section.quote-container .description-quote p {
     text-align: center;
 }
 
+main section.history-container {
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100vh;
+    max-width: 1200px;
+    margin-top: 5rem;
+    margin-inline: 0;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section.history-container .content-history {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    max-width: 1200px;
+    /* margin-inline: auto; */
+    margin-block: 0;
+}
+main section.history-container .content-history .title-history p {
+    font-size: 2.5rem;
+    color: #FFF0CE;
+    font-weight: bold;
+}
+
 
 /* MOBILE LAYOUT */
 @media screen and (max-width: 899px) {
@@ -760,6 +796,12 @@ main section.quote-container .description-quote p {
 
     main section.content-about .description-about .image-about img:hover {
         width: 100%;
+    }
+    main section.project-container .filter-project .filter-list ul {
+        flex-wrap: wrap;
+    }
+    main section.project-container .filter-project .filter-list li {
+        margin-top: 20px;
     }
 }
 

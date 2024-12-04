@@ -12,6 +12,9 @@
     <!-- CSS Styling -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +30,9 @@
 
     <!-- Fontawesome Icon -->
     <script src="https://kit.fontawesome.com/17b39fa33f.js" crossorigin="anonymous"></script>
-</head>
 
 <body>
-    <header class="navbar-container">
+    <header class="navbar-container" id="header">
         <div class="brand-logo">
             <p>Portofolio.</p>
         </div>
@@ -39,9 +41,9 @@
         </div>
         <nav class="nav-list">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#project">Project</a></li>
+                <li id="pageHome"><a href="#home">Home</a></li>
+                <li id="pageAbout"><a href="#about">About Us</a></li>
+                <li id="pageProject"><a href="#project">Project</a></li>
             </ul>
         </nav>
         <div class="download-cv">
@@ -50,10 +52,10 @@
 
     </header>
 
-    <main>
-        <section class="content-home">
+    <main id="content">
+        <section class="content-home" id="home">
             <div class="content-description">
-                <h2 class="welcome">Hi, I Am</h2>
+                <h2 class="welcome">Hi!, I Am</h2>
                 <h2 class="title">Fendika Edo Ferdinata</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum velit ducimus provident
                     esse officia labore rem praesentium atque, sint alias animi enim odit soluta possimus aperiam!
@@ -74,13 +76,15 @@
                 <img src="assets/img/Favicon.png" alt="Foto Profile">
             </div>
         </section>
-        <section class="content-about">
+        <section class="content-about" id="about">
             <div class="title-about">
                 <p>About Me</p>
             </div>
             <div class="description-about">
                 <div class="image-about">
-                    <img src="assets/img/Lego1.png" alt="About Me">
+                    <img src="assets/img/profile-me.JPG" alt="About Me">
+                    <img src="assets/img/profile-me.JPG" alt="About Me">
+                    <img src="assets/img/profile-me.JPG" alt="About Me">
                 </div>
                 <div class="text-about">
                     <h2>Let Me Introduce</h2>
@@ -93,86 +97,91 @@
                         commodi repellendus culpa, aut modi eius! Explicabo iste sed beatae est!</p>
                     <div class="school-about">
                         <ul>
-                            <li>SD</li>
-                            <li>SMP</li>
-                            <li>SMK</li>
-                            <li>KULIAH</li>
+                            <li id="sd">SD</li>
+                            <li id="smp">SMP</li>
+                            <li id="smk">SMK</li>
+                            <li id="kuliah">KULIAH</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="content-project">
+        <section class="project-container" id="project">
             <div class="title-project">
                 <p>Project Ideas</p>
             </div>
-            <div class="my-project">
-                <div class="content-project">
-                    <div class="card-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <h1>Project 1</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, ipsa odit distinctio labore
-                            odio.</p>
-                    </div>
-                    <div class="card-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <h1>Project 1</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, ipsa odit distinctio labore
-                            odio
-                            facere, unde delectus accusamus ex omnis, fugit dolor! Aliquid, assumenda aut. Tempora,
-                            culpa.
-                            Molestiae, illum cumque.</p>
-                    </div>
-                    <div class="card-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <h1>Project 1</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, ipsa odit distinctio labore
-                            odio
-                            facere, unde delectus accusamus ex omnis, fugit dolor! Aliquid, assumenda aut. Tempora,
-                            culpa.
-                            Molestiae, illum cumque.</p>
-                    </div>
-                    <div class="card-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <h1>Project 1</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, ipsa odit distinctio labore
-                            odio
-                            facere, unde delectus accusamus ex omnis, fugit dolor! Aliquid, assumenda aut. Tempora,
-                            culpa.
-                            Molestiae, illum cumque.</p>
-                    </div>
-                    <div class="card-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <h1>Project 1</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, ipsa odit distinctio labore
-                            odio
-                            facere, unde delectus accusamus ex omnis, fugit dolor! Aliquid, assumenda aut. Tempora,
-                            culpa.
-                            Molestiae, illum cumque.</p>
-                    </div>
-                    <div class="card-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <h1>Project 1</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, ipsa odit distinctio labore
-                            odio
-                            facere, unde delectus accusamus ex omnis, fugit dolor! Aliquid, assumenda aut. Tempora,
-                            culpa.
-                            Molestiae, illum cumque.</p>
-                    </div>
+            <div class="filter-project">
+                <div class="icon-filter">
+                    <i class="fa-solid fa-filter"></i>
                 </div>
+                <div class="filter-list">
+                    <ul>
+                        <li><a href="#html">HTML</a></li>
+                        <li><a href="#css">CSS</a></li>
+                        <li><a href="#js">JS</a></li>
+                        <li><a href="#laravel">Laravel</a></li>
+                        <li><a href="#php">PHP</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-project">
+                <figure>
+                    <img src="assets/img/project/Project-1.png" alt="">
+                    <figcaption>My Project 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/project/Project-1.png" alt="">
+                    <figcaption>My Project 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/project/Project-1.png" alt="">
+                    <figcaption>My Project 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/project/Project-1.png" alt="">
+                    <figcaption>My Project 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/project/Project-1.png" alt="">
+                    <figcaption>My Project 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/project/Project-1.png" alt="">
+                    <figcaption>My Project 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/project/Project-1.png" alt="">
+                    <figcaption>My Project 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/project/Project-1.png" alt="">
+                    <figcaption>My Project 1</figcaption>
+                </figure>
             </div>
         </section>
         <section class="skills-container">
             <div class="title-skills">
                 <p>Skills Project</p>
             </div>
-            <div class="logo">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-laravel"></i>
-                <i class="fa-brands fa-php"></i>
+            <div class="logo-container">
+                <div class="logo" id="logo">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-laravel"></i>
+                    <i class="fa-brands fa-php"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="logo" id="logo">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-laravel"></i>
+                    <i class="fa-brands fa-php"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
             </div>
+            
         </section>
         <section class="quote-container">
             <div class="content-quote">
@@ -191,6 +200,8 @@
     <footer>
 
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

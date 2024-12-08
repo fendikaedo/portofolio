@@ -15,5 +15,5 @@ pageProject.addEventListener('click', function () {
 });
 
 //Infinite Scroll Logo
-const logo = document.querySelector('.logo').cloneNode(true);
-document.querySelector('.logo-container').appendChild(logo);
+// const logo = document.querySelector('.logo').cloneNode(true);
+// document.querySelector('.logo-container').appendChild(logo);

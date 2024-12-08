@@ -943,7 +943,7 @@ main section.history-container .description-history .text-history3 p {
 
 
 /* MEDIA MOBILE LANDSCAPE LAYOUT */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
     header.navbar-container {
         flex-direction: row;
     }
@@ -1025,14 +1025,14 @@ main section.history-container .description-history .text-history3 p {
         height: 300px;
     }
     main section.content-about .description-about .image-about img:nth-child(2) {
-        width: 150px;
-        height: 400px;
-
+        width: 100px;
+        height: 300px;
     }
     main section.content-about .description-about .image-about img:hover {
-        width: 150px;
-        height: 400px;
-    }
+        width: 100px;
+        height: 300px;
+}
+    
 }
 
 /* MEDIA TABLET LAYOUT */

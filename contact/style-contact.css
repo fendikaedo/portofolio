@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #0C356A, #000000);
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-contact {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #222831;
+
+    border: 2px solid #fff;
+    box-shadow: rgba(111, 111, 110, 0.5) 0px 10px 10px 0px;
+    --s: 100px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+.card-contact .title-card {
+    position: absolute;
+    top: 0px;
+    left: 89px;
+}
+
+.card-contact .title-card span {
+    border: 2px solid #fff;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #FFC436;
+    padding: 0.6rem;
+    background-color: #222831;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.card-contact .avatar-card {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+}
+
+.card-contact .avatar-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.card-contact .name-card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.card-contact .name-card span {
+    color: #FFC436;
+    font-weight: 500;
+}
+.card-contact .description-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #222831;
+    position: relative;
+    padding: 0.5rem;
+    border-radius: 50% 50% 0 0;
+    -webkit-border-radius: 20% 20% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    -ms-border-radius: 50% 50% 0 0;
+    -o-border-radius: 50% 50% 0 0;
+    overflow: hidden;
+    border-top: 2px solid #fff;
+}
+
+.card-contact .description-contact p {
+    padding: 0.7rem;
+    text-align: justify;
+    color: #fff;
+    margin-top: 0;
+    width: 100%;
+}
+
+.card-contact .description-contact .send-message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-contact .description-contact .send-message form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card-contact .description-contact .send-message form input {
+    width: 250px;
+    height: 50px;
+}
+
+.card-contact .description-contact .send-message form button {
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}

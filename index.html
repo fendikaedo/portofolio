@@ -7,13 +7,10 @@
     <title>Portofolio - Fendika Edo Ferdinata</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/Favicon.png" type="profile-me">
+    <link rel="shortcut icon" href="assets/img/favicon_io/android-chrome-512x512.png" style="border-radius: 50%;" type="profile-me">
 
     <!-- CSS Styling -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- JS -->
-    <script src="js/script.js"></script>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,13 +28,32 @@
     <!-- Fontawesome Icon -->
     <script src="https://kit.fontawesome.com/17b39fa33f.js" crossorigin="anonymous"></script>
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 <body>
-    <header class="navbar-container" id="header">
+    <header class="navbar-container" id="header" data-aos="zoom-in-down">
         <div class="brand-logo">
             <p>Portofolio.</p>
         </div>
-        <div class="toogle-icon">
-            <i class="fa-solid fa-bars"></i>
+        <div class="nav-toggle-off">
+            <div class="nav-toggle-icon" id="toggleButton">
+                <i class="fa-solid fa-bars toggle-on" id="onToggle"></i>
+                <i class="fa-solid fa-xmark toggle-off" id="offToggle"></i>
+            </div>
+            <div class="nav-toggle-list">
+                <ul>
+                    <li id="pageAbout"><a href="#about">About</a></li>
+                    <li id="pageProject"><a href="#project">Project</a></li>
+                    <li id="pageHistory"><a href="#history">History</a></li>
+                    <li id="pageContact"><a href="contact/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="toggle-social-media">
+                <i title="Github" class="fa-brands fa-github" id="myGithub"></i>
+                <i title="Instagram" class="fa-brands fa-instagram" id="myInstagram"></i>
+                <i title="Tiktok" class="fa-brands fa-tiktok" id="myTiktok"></i>
+            </div>
         </div>
         <nav class="nav-list" id="nav">
             <ul>
@@ -52,9 +68,14 @@
 
     <main id="content">
         <section class="content-home" id="home">
-            <div class="content-description">
-                <h2 class="welcome">Hi!, I Am <span>Web Developer</span></h2>
-                <h2 class="title">Fendika Edo Ferdinata</h2>
+            <div class="content-description" data-aos="fade-right">
+                <h2 class="welcome">Hi! <i class="fa-solid fa-hand"></i>, I Am</h2>
+                <span class="name">Fendika Edo Ferdinata</span>
+                <div class="tag">
+                    <span class="tag-developer">Frontend</span>
+                    <span class="tag-developer">Backend</span>
+                    <span class="tag-developer">Developer</span>
+                </div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum velit ducimus provident
                     esse officia labore rem praesentium atque, sint alias animi enim odit soluta possimus aperiam!
                     Itaque, consectetur qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti
@@ -70,22 +91,22 @@
                 </div>
             </div>
 
-            <div class="content-image">
-                <img src="assets/img/Favicon.png" alt="Foto Profile">
+            <div class="content-image" data-aos="fade-left">
+                <img src="assets/img/profile.png" alt="Foto Profile">
             </div>
         </section>
 
         <section class="content-about">
-            <div class="title-about" id="about">
+            <div class="title-about" id="about" data-aos="fade-right">
                 <p>About Me</p>
             </div>
             <div class="description-about">
-                <div class="image-about">
+                <div class="image-about" data-aos="fade-right">
+                    <img src="assets/img/about/about3.jpg" alt="About Me">
                     <img src="assets/img/profile-me.JPG" alt="About Me">
-                    <img src="assets/img/profile-me.JPG" alt="About Me">
-                    <img src="assets/img/profile-me.JPG" alt="About Me">
+                    <img src="assets/img/about/about1.jpg" alt="About Me">
                 </div>
-                <div class="text-about">
+                <div class="text-about" data-aos="fade-left">
                     <h2 id="titleAbout">Let Me Introduce</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eligendi ipsam quos ad
                         dignissimos
@@ -98,10 +119,10 @@
             </div>
         </section>
         <section class="skills-container">
-            <div class="title-skills">
+            <div class="title-skills" data-aos="fade-down">
                 <h1>Skills on Porject</h1>
             </div>
-            <div class="logo-container">
+            <div class="logo-container" data-aos="fade-up">
                 <div class="logo" id="logo">
                     <i class="fa-brands fa-html5">
                         <span>HTML</span>
@@ -122,10 +143,10 @@
             </div>
         </section>
         <section class="project-container" id="project">
-            <div class="title-project">
+            <div class="title-project" data-aos="fade-left">
                 <p>My Project</p>
             </div>
-            <div class="filter-project">
+            <div class="filter-project" data-aos="fade-right">
                 <div class="filter-list">
                     <ul>
                         <li><a href="#html">HTML</a></li>
@@ -137,7 +158,7 @@
                 </div>
             </div>
             <div class="content-project">
-                <figure>
+                <figure data-aos="flip-up">
                     <div class="image-project">
                         <img src="assets/img/project/Project-1.png" alt="">
                         <span class="next-project">
@@ -151,7 +172,7 @@
                         cupiditate a sed illum.
                     </span>
                 </figure>
-                <figure>
+                <figure data-aos="flip-up">
                     <div class="image-project">
                         <img src="assets/img/project/Project-1.png" alt="">
                         <span class="next-project">
@@ -165,7 +186,7 @@
                         cupiditate a sed illum.
                     </span>
                 </figure>
-                <figure>
+                <figure data-aos="flip-up">
                     <div class="image-project">
                         <img src="assets/img/project/Project-1.png" alt="">
                         <span class="next-project">
@@ -179,7 +200,7 @@
                         cupiditate a sed illum.
                     </span>
                 </figure>
-                <figure>
+                <figure data-aos="flip-up">
                     <div class="image-project">
                         <img src="assets/img/project/Project-1.png" alt="">
                         <span class="next-project">
@@ -193,7 +214,7 @@
                         cupiditate a sed illum.
                     </span>
                 </figure>
-                <figure>
+                <figure data-aos="flip-up">
                     <div class="image-project">
                         <img src="assets/img/project/Project-1.png" alt="">
                         <span class="next-project">
@@ -207,7 +228,7 @@
                         cupiditate a sed illum.
                     </span>
                 </figure>
-                <figure>
+                <figure data-aos="flip-up">
                     <div class="image-project">
                         <img src="assets/img/project/Project-1.png" alt="">
                         <span class="next-project">
@@ -226,14 +247,11 @@
         </section>
 
         <section class="history-container" id="history">
-            <div class="title-history">
+            <div class="title-history" data-aos="fade-right">
                 <p>History</p>
             </div>
             <div class="content-history">
-                <span class="slide-history previous-history">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </span>
-                <div class="card-history">
+                <div class="card-history" data-aos="zoom-in">
                     <div class="image-history-card">
                         <img src="assets/img/history/work1.JPG" alt="">
                     </div>
@@ -245,7 +263,7 @@
                             veritatis illo necessitatibus nostrum? Totam provident dicta, </span>
                     </div>
                 </div>
-                <div class="card-history">
+                <div class="card-history" data-aos="zoom-in">
                     <div class="image-history-card">
                         <img src="assets/img/history/work1.JPG" alt="">
                     </div>
@@ -257,7 +275,7 @@
                             veritatis illo necessitatibus nostrum? Totam provident dicta, </span>
                     </div>
                 </div>
-                <div class="card-history">
+                <div class="card-history" data-aos="zoom-in">
                     <div class="image-history-card">
                         <img src="assets/img/history/work1.JPG" alt="">
                     </div>
@@ -269,15 +287,20 @@
                             veritatis illo necessitatibus nostrum? Totam provident dicta, </span>
                     </div>
                 </div>
-                <span class="slide-history previous-history">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </span>
+                <div class="slider-history">
+                    <span class="slide-history" data-aos="fade-right">
+                        <i class="fa-solid fa-arrow-left prev-history"></i>
+                    </span>
+                    <span class="slide-history" data-aos="fade-left">
+                        <i class="fa-solid fa-arrow-right next-history"></i>
+                    </span>
+                </div>
             </div>
 
         </section>
 
         <section class="quote-container">
-            <div class="content-quote">
+            <div class="content-quote" data-aos="zoom-out">
                 <div class="title-quote">
                     <p>Quotes of Me</p>
                 </div>
@@ -290,6 +313,11 @@
         </section>
 
     </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="js/script.js"></script>
 </body>

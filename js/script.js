@@ -1,4 +1,33 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener('load', () => {
+  AOS.refresh(); // Memperbarui posisi elemen AOS
+});
+
+AOS.init({
+  duration: 1000, // Durasi animasi (1 detik)
+  once: true, // Animasi hanya dijalankan sekali
+  mirror: false, // Jangan ulangi animasi ketika scroll ke atas
+  anchorPlacement: 'top-bottom', // Posisi anchor elemen
+});
+
+//? TOGGLE BUTTON
+const navToggle = document.querySelector('.nav-toggle-off')
+const toggleButton = document.querySelectorAll('.nav-toggle-icon i');
+const toggleOn = document.getElementById('onToggle');
+const toggleOff = document.getElementById('offToggle');
+toggleButton.forEach(function(toggle){
+  toggle.addEventListener('click',function(){
+    if(toggle == toggleOn){
+      navToggle.classList.remove('nav-toggle-off');
+      navToggle.classList.add('nav-toggle-on');
+    }else if(toggle == toggleOff){
+      navToggle.classList.remove('nav-toggle-on');
+      navToggle.classList.add('nav-toggle-off');
+    }
+  });
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+
   //! NAVBAR CONTENT
 
   //?Navbar Click Page About
@@ -65,15 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.open(linkTiktok,'__blank');
   });
 
-  //!Button Click Whatsapp
-  // const buttonWA = document.getElementById('whatsapp');
-
-  // buttonWA.addEventListener('click', function(){
-  //   const linkWA = document.querySelector('a');
-
-  //   linkWA.classList.add('href','https://wa.me/+62895608044646');
-  // })
-
   //!Button Click Description About
   const nextAbout = document.getElementById("nextAbout");
   const titleAbout = document.getElementById("titleAbout");
@@ -81,4 +101,12 @@ document.addEventListener("DOMContentLoaded", function () {
   nextAbout.addEventListener("click", function () {
     titleAbout.textContent = "Haloo";
   });
-});
+
+
+
+  //?BUTTON SLIDE HISTORY
+  
+
+
+
+// });

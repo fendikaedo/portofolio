@@ -121,13 +121,4 @@ contentImage.addEventListener("click", function (e) {
     imageHistory.src = e.target.src;
   }
 });
-//?CLICK TAB CONTACT
-// const contactContainer = document.querySelector('.contact-container');
 
-// contactContainer.addEventListener('click',function(e){
-//   e.preventDefault();
-
-//   if (e.target.className == '.whatsapp') {
-
-//   }
-// })

@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Fendika Edo Ferdinata</title>
+    <title>Portofolio</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon_io/android-chrome-512x512.png" style="border-radius: 50%;" type="profile-me">
+    <link rel="shortcut icon" href="assets/img/favicon_io/android-chrome-512x512.png" style="border-radius: 50%;"
+        type="profile-me">
 
     <!-- CSS Styling -->
     <link rel="stylesheet" href="css/style.css">
@@ -32,9 +33,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <body>
+    <!-- <div class="loading-container" id="loader">
+        <div class="loading">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div> -->
     <header class="navbar-container" id="header" data-aos="zoom-in-down">
         <div class="brand-logo">
-            <p>Portofolio.</p>
+            <p>Portofolio</p>
         </div>
         <div class="nav-toggle-off">
             <div class="nav-toggle-icon" id="toggleButton">
@@ -46,7 +53,6 @@
                     <li id="pageAbout"><a href="#about">About</a></li>
                     <li id="pageProject"><a href="#project">Project</a></li>
                     <li id="pageHistory"><a href="#history">History</a></li>
-                    <li id="pageContact"><a href="contact/contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="toggle-social-media">
@@ -57,11 +63,11 @@
         </div>
         <nav class="nav-list" id="nav">
             <ul>
-                <!-- <li id="pageHome"><a href="#home">Home</a></li> -->
+                <li id="pageHome"><a href="#">Home</a></li>
                 <li id="pageAbout"><a href="#about">About</a></li>
                 <li id="pageProject"><a href="#project">Project</a></li>
                 <li id="pageHistory"><a href="#history">History</a></li>
-                <li id="pageContact"><a href="contact/contact.html">Contact</a></li>
+                <li id="pageContact"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -76,13 +82,12 @@
                     <span class="tag-developer">Backend</span>
                     <span class="tag-developer">Developer</span>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum velit ducimus provident
-                    esse officia labore rem praesentium atque, sint alias animi enim odit soluta possimus aperiam!
-                    Itaque, consectetur qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti
-                    quisquam quasi, ipsa numquam iusto! Provident a totam ipsam, similique quibusdam iure mollitia
-                    voluptatibus quasi quam neque amet recusandae consequuntur!X</p>
+                <p>Saya seorang pengembang perangkat lunak dengan pengalaman di Laravel, PHP, serta HTML, CSS, dan
+                    JavaScript. Di sini, Anda dapat melihat berbagai proyek yang saya kerjakan, yang mencerminkan
+                    dedikasi dan semangat untuk terus berkembang. Jika Anda tertarik untuk bekerja sama, jangan ragu
+                    untuk menghubungi saya!</p>
                 <div class="content-contact">
-                    <a id="buttonWA"><i class="fa-regular fa-envelope"></i>Hire Me</a>
+                    <span id="btnContact"><i class="fa-solid fa-phone"></i>Contact Me</span>
                     <div class="social-media">
                         <i title="Github" class="fa-brands fa-github" id="myGithub"></i>
                         <i title="Instagram" class="fa-brands fa-instagram" id="myInstagram"></i>
@@ -103,198 +108,173 @@
             <div class="description-about">
                 <div class="image-about" data-aos="fade-right">
                     <img src="assets/img/about/about3.jpg" alt="About Me">
-                    <img src="assets/img/profile-me.JPG" alt="About Me">
+                    <img src="assets/img/about/about2.JPG" alt="About Me">
                     <img src="assets/img/about/about1.jpg" alt="About Me">
                 </div>
-                <div class="text-about" data-aos="fade-left">
-                    <h2 id="titleAbout">Let Me Introduce</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eligendi ipsam quos ad
-                        dignissimos
-                        voluptate laboriosam, ab earum. Ducimus ullam tenetur a! Excepturi aperiam natus doloribus nobis
-                        laudantium nostrum perspiciatis!X Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Provident, voluptatibus in? Perspiciatis repudiandae neque odio repellendus totam? Perferendis
-                        quae
-                        commodi repellendus culpa, aut modi eius! Explicabo iste sed beatae est!</p>
+                <div class="info-about" data-aos="fade-left">
+                    <h2>Let Me Introduce</h2>
+                    <p>
+                        Hi, I'm Edo, a passionate web developer specializing in creating modern and efficient web
+                        applications.
+                        With expertise in Laravel and JavaScript, I enjoy solving complex problems and building
+                        user-friendly systems.
+                    </p>
+                    <div class="skills-about">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Frontend Development
+                                <span>Intermediate</span>
+                            </li>
+                            <li>Backend Development
+                                <span>Beginner</span>
+                            </li>
+                            <li>API Integration
+                                <span>Beginner</span>
+                            </li>
+                            <li>Database Management
+                                <span>Intermediate</span>
+                            </li>
+                            <li>Problem Solving
+                                <span>Beginner</span>
+                            </li>
+                            <li>Public Speaking
+                                <span>Advanced</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="experience-about">
+                        <h2>Experience</h2>
+                        <p>
+                            I've worked on various projects including e-learning systems, company profiles, and
+                            management applications.
+                            My approach focuses on delivering high-quality, scalable, and maintainable solutions.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section class="skills-container">
             <div class="title-skills" data-aos="fade-down">
-                <h1>Skills on Porject</h1>
+                <h1>Skills on Project</h1>
             </div>
-            <div class="logo-container" data-aos="fade-up">
-                <div class="logo" id="logo">
-                    <i class="fa-brands fa-html5">
-                        <span>HTML</span>
-                    </i>
-                    <i class="fa-brands fa-css3-alt">
-                        <span>CSS</span>
-                    </i>
-                    <i class="fa-brands fa-js">
-                        <span>JS</span>
-                    </i>
-                    <i class="fa-brands fa-laravel">
-                        <span>Laravel</span>
-                    </i>
-                    <i class="fa-brands fa-php">
-                        <span>PHP</span>
-                    </i>
+            <div class="logo-container" data-aos="fade-in">
+                <div class="scrolling-logo">
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/html.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/css.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/javascript.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/php.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/laravel.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/bootstrap.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/mysql.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/laragon.png" alt="">
+                    </div>
                 </div>
+                <div class="scrolling-logo">
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/html.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/css.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/javascript.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/php.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/laravel.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/bootstrap.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/mysql.png" alt="">
+                    </div>
+                    <div class="logo" id="logo">
+                        <img src="/assets/img/skills/laragon.png" alt="">
+                    </div>
+                </div>
+
             </div>
         </section>
+
         <section class="project-container" id="project">
             <div class="title-project" data-aos="fade-left">
-                <p>My Project</p>
+                <p>Project</p>
             </div>
             <div class="filter-project" data-aos="fade-right">
                 <div class="filter-list">
                     <ul>
-                        <li><a href="#html">HTML</a></li>
-                        <li><a href="#css">CSS</a></li>
-                        <li><a href="#js">JS</a></li>
-                        <li><a href="#laravel">Laravel</a></li>
-                        <li><a href="#php">PHP</a></li>
+                        <li><a href="#personal">Personal</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#client">Client</a></li>
                     </ul>
                 </div>
             </div>
             <div class="content-project">
                 <figure data-aos="flip-up">
                     <div class="image-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
+                        <img src="assets/img/project/emusrenbang.png" alt="">
                         <span class="next-project">
                             Read More
                             <i class="fa-solid fa-arrow-right"></i>
                         </span>
                     </div>
-                    <figcaption>My Project 1</figcaption>
+                    <figcaption>eMusrenbang</figcaption>
                     <span class="description-project">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quo quia qui nihil nesciunt
-                        cupiditate a sed illum.
+                        Musrenbang merupakan forum untuk menyusun rencana pembangunan nasional dan daerah dalam
+                        mengambil keputusan pembangunan.
                     </span>
                 </figure>
-                <figure data-aos="flip-up">
-                    <div class="image-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <span class="next-project">
-                            Read More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                    <figcaption>My Project 1</figcaption>
-                    <span class="description-project">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quo quia qui nihil nesciunt
-                        cupiditate a sed illum.
-                    </span>
-                </figure>
-                <figure data-aos="flip-up">
-                    <div class="image-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <span class="next-project">
-                            Read More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                    <figcaption>My Project 1</figcaption>
-                    <span class="description-project">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quo quia qui nihil nesciunt
-                        cupiditate a sed illum.
-                    </span>
-                </figure>
-                <figure data-aos="flip-up">
-                    <div class="image-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <span class="next-project">
-                            Read More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                    <figcaption>My Project 1</figcaption>
-                    <span class="description-project">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quo quia qui nihil nesciunt
-                        cupiditate a sed illum.
-                    </span>
-                </figure>
-                <figure data-aos="flip-up">
-                    <div class="image-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <span class="next-project">
-                            Read More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                    <figcaption>My Project 1</figcaption>
-                    <span class="description-project">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quo quia qui nihil nesciunt
-                        cupiditate a sed illum.
-                    </span>
-                </figure>
-                <figure data-aos="flip-up">
-                    <div class="image-project">
-                        <img src="assets/img/project/Project-1.png" alt="">
-                        <span class="next-project">
-                            Read More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                    <figcaption>My Project 1</figcaption>
-                    <span class="description-project">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quo quia qui nihil nesciunt
-                        cupiditate a sed illum.
-                    </span>
-                </figure>
-
             </div>
         </section>
+
 
         <section class="history-container" id="history">
             <div class="title-history" data-aos="fade-right">
                 <p>History</p>
             </div>
-            <div class="content-history">
-                <div class="card-history" data-aos="zoom-in">
-                    <div class="image-history-card">
-                        <img src="assets/img/history/work1.JPG" alt="">
+            <div class="content-history" id="contentHistory">
+                <div class="image-history">
+                    <img src="assets/img/history/work1.JPG" class="imageHistory" alt="">
+                    <span class="description-image-history">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Architecto doloribus veritatis repellat optio aut modi id eveniet itaque amet laborum quis
+                        dolore neque, harum dignissimos! Odio voluptates molestias ab! Ex.</span>
+                </div>
+                <div class="thumbnail-history">
+                    <div class="thumbnail-image-history">
+                        <img src="assets/img/history/work2.jpg" class="thumb" alt="">
+                        <img src="assets/img/history/work1.jpg" class="thumb" alt="">
+                        <img src="assets/img/history/work2.jpg" class="thumb" alt="">
+                        <img src="assets/img/history/work1.jpg" class="thumb" alt="">
+                        <img src="assets/img/history/work2.jpg" class="thumb" alt="">
                     </div>
-                    <div class="card-body-history">
-                        <h1 class="title-card">Place Work 1
-                            <span class="date-card">21/2/2024</span>
-                        </h1>
-                        <span class="description-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                            veritatis illo necessitatibus nostrum? Totam provident dicta, </span>
+                    <div class="thumbnail-image-history">
+                        <img src="assets/img/history/work2.jpg" class="thumb" alt="">
+                        <img src="assets/img/history/work1.jpg" class="thumb" alt="">
+                        <img src="assets/img/history/work2.jpg" class="thumb" alt="">
+                        <img src="assets/img/history/work1.jpg" class="thumb" alt="">
+                        <img src="assets/img/history/work2.jpg" class="thumb" alt="">
                     </div>
                 </div>
-                <div class="card-history" data-aos="zoom-in">
-                    <div class="image-history-card">
-                        <img src="assets/img/history/work1.JPG" alt="">
-                    </div>
-                    <div class="card-body-history">
-                        <h1 class="title-card">Place Work 1
-                            <span class="date-card">21/2/2024</span>
-                        </h1>
-                        <span class="description-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                            veritatis illo necessitatibus nostrum? Totam provident dicta, </span>
-                    </div>
-                </div>
-                <div class="card-history" data-aos="zoom-in">
-                    <div class="image-history-card">
-                        <img src="assets/img/history/work1.JPG" alt="">
-                    </div>
-                    <div class="card-body-history">
-                        <h1 class="title-card">Place Work 1
-                            <span class="date-card">21/2/2024</span>
-                        </h1>
-                        <span class="description-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                            veritatis illo necessitatibus nostrum? Totam provident dicta, </span>
-                    </div>
-                </div>
-                <div class="slider-history">
-                    <span class="slide-history" data-aos="fade-right">
-                        <i class="fa-solid fa-arrow-left prev-history"></i>
-                    </span>
-                    <span class="slide-history" data-aos="fade-left">
-                        <i class="fa-solid fa-arrow-right next-history"></i>
-                    </span>
-                </div>
+
             </div>
 
         </section>
@@ -312,6 +292,34 @@
             </div>
         </section>
 
+        <section class="contact-container" id="contact">
+            <div class="title-contact">
+                <span>Contact</span>
+            </div>
+            <div class="content-contact">
+                <div class="card-contact">
+                    <div class="tab-contact">
+                        <ul>
+                            <li><i class="fa-brands fa-whatsapp whatsapp"></i></li>
+                            <li><i class="fa-regular fa-envelope email"></i></li>
+                        </ul>
+                    </div>
+                    <form action="" onsubmit="sendMessage()">
+                        <div class="input-contact">
+                            <div class="label">Name</div>
+                            <input type="text" class="input-name">
+                        </div>
+                        <div class="input-contact">
+                            <div class="label">Message</div>
+                            <input type="text" class="input-message">
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                    <span class="note">Terima kasih sudah meluangkan waktu untuk mengirim pesan kepada saya, Pesan anda
+                        akan dikirim melalui whatsapp/gmail</span>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

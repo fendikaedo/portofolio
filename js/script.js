@@ -9,14 +9,23 @@ AOS.init({
   anchorPlacement: "top-bottom", // Posisi anchor elemen
 });
 
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar-container");
-  if (window.scrollY > 0) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
+// let scrollTimeout;
+// window.addEventListener("scroll", function () {
+//   const navbar = document.querySelector(".navbar-container");
+//   if (currentScrollY > lastScrollY) {
+//      navbar.classList.add("scrolled");
+//    } else {
+//      navbar.classList.remove("scrolled");
+//    }
+//     navbar.classList.add("scrolled");
+
+//     clearTimeout(scrollTimeout);
+
+//     scrollTimeout = setTimeout(() => {
+//       navbar.classList.remove('scrolled');
+//     }, 1000);
+
+// });
 
 //!LOADING
 // document.addEventListener("DOMContentLoaded", () => {
@@ -71,54 +80,35 @@ navLinks.forEach(function (link) {
   }
 });
 
-//!BUTTON CONTACT ME
-const buttonContact = document.getElementById("btnContact");
-buttonContact.addEventListener("click", function () {
-  const pageContact = document.getElementById("contact");
-  pageContact.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
-});
+//?LINK SOCIAL MEDIA
 
-//?Link Social Media
-//! Github
-const github = document.getElementById("myGithub");
-github.addEventListener("click", function () {
-  const linkGithub = `https://github.com/fendikaedo`;
-  window.open(linkGithub, "__blank");
-});
-
-//! Instagram
-const instagram = document.getElementById("myInstagram");
-instagram.addEventListener("click", function () {
-  const linkInstagram = `https://www.instagram.com/frdinata_`;
-  window.open(linkInstagram, "__blank");
-});
-
-//! Tiktok
-const tiktok = document.getElementById("myTiktok");
-tiktok.addEventListener("click", function () {
-  const linkTiktok = `https://www.tiktok.com/@fndkfrdinata`;
-  window.open(linkTiktok, "__blank");
-});
-
-//! Whatsapp
-function sendMessage() {
-  const url = `https://wa.me/62895608044646?text=${".input-name".value}${
-    ".input-message".value
-  }`;
-
-  window.open(url, "__blank");
-}
 
 //?CLICK THUMBNAIL IMAGE HISTORY
-const contentImage = document.querySelector(".content-history");
-const imageHistory = document.querySelector(".imageHistory");
-const thumbnail = document.querySelectorAll(".thumb");
-contentImage.addEventListener("click", function (e) {
-  if ((e.target.className = "thumb")) {
-    imageHistory.src = e.target.src;
+// const contentHistory = document.querySelector('.content-history');
+// const imageHistory = document.querySelectorAll('.image-history');
+
+// contentHistory.addEventListener('click',function(e){
+
+// });
+
+
+//?CLICK TAB ACTIVE
+const cardContact = document.querySelector(".card-contact");
+const tabContact = document.querySelectorAll(".tabContact");
+const formContact = document.querySelectorAll("form");
+
+cardContact.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+  if (id) {
+    tabContact.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+
+    formContact.forEach((content) => {
+      content.classList.remove("active");
+    });
+    const elemen = document.getElementById(id);
+    elemen.classList.add("active");
   }
 });
-

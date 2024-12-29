@@ -548,10 +548,10 @@ main section.content-home .content-description .social-media img:hover{
 
 /* START CONTENT SKILLS */
 main section.skills-container {
-    flex: 1;
+    /* flex: 1; */
 
     width: 100%;
-    height: 100vh;
+    height: 100vh auto;
     padding: 1rem;
     background-color: var(--five-background-color);
 
@@ -889,6 +889,8 @@ main section.project-container .content-project {
     max-width: 1200px;
     gap: 1rem 1.5rem;
     justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
 }
 main section.project-container .content-project .card-project {
     position: relative;
@@ -1076,17 +1078,6 @@ main section.quote-container .title-quote span {
     white-space: nowrap;
     line-height: 1.7rem;
 }
-
-main section.quote-container .title-quote span::after {
-    content: "...";
-    font-size: 2.5rem;
-    font-weight: bold;
-    display: inline-block;
-    width: 0;
-    color: var(--six-background-color);
-    white-space: nowrap;
-}
-
 main section.quote-container .description-quote {
     display: flex;
     width: 100%;
@@ -1248,7 +1239,7 @@ main section.contact-container {
     width: 100%;
     height: 100vh;
     padding: 0rem 2rem;
-    gap: 2rem;
+    /* gap: 2rem; */
 
     display: flex;
     align-items: center;
@@ -1665,11 +1656,13 @@ main section.contact-container .content-contact .card-contact span.note {
     /* START MOBILE CONTENT SKILLS */
     main section.skills-container {
         padding: 1rem;
+        overflow: hidden;
+        width: 100%;
     }
 
     main section.skills-container .logo-container {
         width: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     main section.skills-container .logo-container .scrolling-logo .logo img {

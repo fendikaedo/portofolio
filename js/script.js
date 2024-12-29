@@ -84,12 +84,6 @@ navLinks.forEach(function (link) {
 
 
 //?CLICK THUMBNAIL IMAGE HISTORY
-// const contentHistory = document.querySelector('.content-history');
-// const imageHistory = document.querySelectorAll('.image-history');
-
-// contentHistory.addEventListener('click',function(e){
-
-// });
 
 
 //?CLICK TAB ACTIVE

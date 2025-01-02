@@ -60,7 +60,7 @@ const navLinks = [
   { id: "pageHome", target: "home" },
   { id: "pageAbout", target: "about" },
   { id: "pageProject", target: "project" },
-  { id: "pageHistory", target: "history" },
+  { id: "pageExperience", target: "experience" },
   { id: "pageContact", target: "contact" },
 ];
 
@@ -80,11 +80,58 @@ navLinks.forEach(function (link) {
   }
 });
 
+// const downloadCV = document.getElementById("download");
+
+// downloadCV.addEventListener("click",function(){
+//   downloadCV.innerHTML = "Belum bikin hehee"
+// })
+
 //?LINK SOCIAL MEDIA
 
+//?CLICK TAB EXPERIENCE
+const contentExperience = document.querySelector(".content-experience");
+const tabExperience = document.querySelectorAll(".tab-experience ul li");
+const imageExperience = contentExperience.querySelectorAll("img");
 
-//?CLICK THUMBNAIL IMAGE HISTORY
-
+contentExperience.addEventListener("click", function (e) {
+  tabExperience.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+  e.target.classList.add("active");
+  if (e.target.classList.contains("all")) {
+    imageExperience.forEach((all) => {
+      if (all.classList.contains("all")) {
+        all.style.display = "block";
+      } else {
+        all.style.display = "none";
+      }
+    });
+  } else if (e.target.classList.contains("campus")) {
+    imageExperience.forEach((campus) => {
+      if (campus.classList.contains("campus")) {
+        campus.style.display = "block";
+      } else {
+        campus.style.display = "none";
+      }
+    });
+  } else if (e.target.classList.contains("smk")) {
+    imageExperience.forEach((smk) => {
+      if (smk.classList.contains("smk")) {
+        smk.style.display = "block";
+      } else {
+        smk.style.display = "none";
+      }
+    });
+  } else if (e.target.classList.contains("work")) {
+    imageExperience.forEach((work) => {
+      if (work.classList.contains("work")) {
+        work.style.display = "block";
+      } else {
+        work.style.display = "none";
+      }
+    });
+  }
+});
 
 //?CLICK TAB ACTIVE
 const cardContact = document.querySelector(".card-contact");

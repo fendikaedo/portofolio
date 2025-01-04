@@ -9,35 +9,6 @@ AOS.init({
   anchorPlacement: "top-bottom", // Posisi anchor elemen
 });
 
-// let scrollTimeout;
-// window.addEventListener("scroll", function () {
-//   const navbar = document.querySelector(".navbar-container");
-//   if (currentScrollY > lastScrollY) {
-//      navbar.classList.add("scrolled");
-//    } else {
-//      navbar.classList.remove("scrolled");
-//    }
-//     navbar.classList.add("scrolled");
-
-//     clearTimeout(scrollTimeout);
-
-//     scrollTimeout = setTimeout(() => {
-//       navbar.classList.remove('scrolled');
-//     }, 1000);
-
-// });
-
-//!LOADING
-// document.addEventListener("DOMContentLoaded", () => {
-//   const loader = document.getElementById("loader");
-//   const body = document.querySelector("body");
-
-//   setTimeout(() => {
-//     loader.style.display = "none";
-//     body.style.display = "flex";
-//   }, 3000);
-// });
-
 //? TOGGLE BUTTON
 const navToggle = document.querySelector(".nav-toggle-off");
 const toggleButton = document.querySelectorAll(".nav-toggle-icon i");
@@ -80,12 +51,6 @@ navLinks.forEach(function (link) {
   }
 });
 
-// const downloadCV = document.getElementById("download");
-
-// downloadCV.addEventListener("click",function(){
-//   downloadCV.innerHTML = "Belum bikin hehee"
-// })
-
 //?LINK SOCIAL MEDIA
 
 //?CLICK TAB EXPERIENCE
@@ -112,14 +77,6 @@ contentExperience.addEventListener("click", function (e) {
         campus.style.display = "block";
       } else {
         campus.style.display = "none";
-      }
-    });
-  } else if (e.target.classList.contains("smk")) {
-    imageExperience.forEach((smk) => {
-      if (smk.classList.contains("smk")) {
-        smk.style.display = "block";
-      } else {
-        smk.style.display = "none";
       }
     });
   } else if (e.target.classList.contains("work")) {
@@ -153,3 +110,11 @@ cardContact.addEventListener("click", function (e) {
     elemen.classList.add("active");
   }
 });
+
+function sendWhatsapp() {
+  const inputName = document.querySelector(".input-name");
+  const inputMessage = document.querySelector(".input-message");
+  const url = `https://wa.me/62895608044646?text=${inputName.value}, ${inputMessage.value}`;
+  
+  window.open(url,`__blank`);
+}

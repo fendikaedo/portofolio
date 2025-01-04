@@ -33,12 +33,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <body>
-    <!-- <div class="loading-container" id="loader">
-        <div class="loading">
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-    </div> -->
     <header class="navbar-container" id="header" data-aos="zoom-in-down">
         <div class="brand-logo">
             <span>Codinata</span>
@@ -62,7 +56,7 @@
         </div>
         <nav class="nav-list" id="nav">
             <ul>
-                <!-- <li id="pageHome"><a href="#">Home</a></li> -->
+                <li id="pageHome"><a href="#">Home</a></li>
                 <li id="pageAbout"><a href="#about">About</a></li>
                 <li id="pageProject"><a href="#project">Project</a></li>
                 <li id="pageExperience"><a href="#experience">Experience</a></li>
@@ -76,7 +70,7 @@
 
     <main id="content">
         <section class="content-home" id="home">
-            <div class="content-image" data-aos="fade-in">
+            <div class="content-image" data-aos="zoom-in">
                 <img src="assets/img/logo/brand-logo.png" alt="Foto Profile">
             </div>
             <div class="content-description" data-aos="zoom-out">
@@ -94,21 +88,20 @@
                 <div class="social-media">
                     <span>Social Media</span>
                     <a href="https://github.com/fendikaedo" target="_blank">
-                        <img class="github" src="assets/img/social-media/github.png" alt="">
+                        <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="https://instagram.com/frdinata_" target="_blank">
-                        <img class="instagram" src="assets/img/social-media/instagram.png" alt="">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a href="">
-                        <img class="facebook" src="assets/img/social-media/facebook.png" alt="">
+                        <i class="fa-brands fa-facebook"></i>
                     </a>
                     <a href="https://www.tiktok.com/@fndkfrdinata" target="_blank">
-                        <img class="tiktok" src="assets/img/social-media/tiktok.png" alt="">
+                        <i class="fa-brands fa-tiktok"></i>
                     </a>
                     <a href="">
-                        <img class="twitter" src="assets/img/social-media/twitter.png" alt="">
+                        <i class="fa-brands fa-x-twitter"></i>
                     </a>
-
                 </div>
             </div>
 
@@ -187,10 +180,9 @@
                 <div class="info-about" data-aos="fade-left">
                     <h2>Let Me Introduce</h2>
                     <p>
-                        Hi, I'm Edo, a passionate web developer specializing in creating modern and efficient web
-                        applications.
-                        With expertise in Laravel and JavaScript, I enjoy solving complex problems and building
-                        user-friendly systems.
+                        Hai, saya Edo, seorang pengembang web yang bersemangat yang berspesialisasi dalam membuat
+                        aplikasi web yang modern dan efisien. Dengan keahlian dalam frontend dan backend, saya senang
+                        memecahkan masalah yang kompleks dan membangun sistem yang ramah pengguna.
                     </p>
                     <div class="skills-about">
                         <h2>Skills</h2>
@@ -218,9 +210,9 @@
                     <div class="experience-about">
                         <h2>Experience</h2>
                         <p>
-                            I've worked on various projects including e-learning systems, company profiles, and
-                            management applications.
-                            My approach focuses on delivering high-quality, scalable, and maintainable solutions.
+                            Saya telah mengerjakan berbagai proyek termasuk sistem e-learning, profil perusahaan, dan
+                            aplikasi manajemen. Pendekatan saya berfokus pada memberikan solusi berkualitas tinggi,
+                            terukur, dan dapat dipelihara.
                         </p>
                     </div>
                 </div>
@@ -234,15 +226,15 @@
             <div class="filter-project" data-aos="fade-right">
                 <div class="filter-list">
                     <ul>
-                        <li><a href="#personal">All</a></li>
+                        <li><a href="#all" class="active">All</a></li>
                         <li><a href="#personal">Personal</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#client">Client</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="content-project" data-aos="zoom-out">
-                <div class="card-project">
+            <div class="content-project">
+                <div class="card-project" data-aos="flip-left">
                     <div class="image-project">
                         <img src="assets/img/project/emusrenbang.png" alt="">
                     </div>
@@ -262,10 +254,9 @@
                             dan daerah</p>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project" data-aos="flip-left">
                     <div class="image-project">
                         <span class="cooming-soon">Cooming Soon</span>
-                        <!-- <img src="assets/img/project/emusrenbang.png" alt=""> -->
                     </div>
                     <div class="card-title">
                         <span>Company Profile</span>
@@ -282,10 +273,9 @@
                             reiciendis aut repellendus</p>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project" data-aos="flip-left">
                     <div class="image-project">
                         <span class="cooming-soon">Cooming Soon</span>
-                        <!-- <img src="assets/img/project/emusrenbang.png" alt=""> -->
                     </div>
                     <div class="card-title">
                         <span>e-Learning</span>
@@ -314,18 +304,122 @@
                     <ul>
                         <li class="all active">All</li>
                         <li class="campus">Campus</li>
-                        <li class="smk">SMK</li>
                         <li class="work">Work</li>
                     </ul>
                 </div>
                 <div class="image-experience">
                     <div class="image-list">
-                        <img src="assets/img/history/campus/work1.JPG" class="all work" alt="">
-                        <img src="assets/img/history/campus/3.jpg" class="all campus" alt="">
-                        <img src="assets/img/history/campus/3.jpg" class=" all campus" alt="">
-                        <img src="assets/img/history/campus/work2.jpg" class="all work" alt="">
-                        <img src="assets/img/history/campus/3.jpg" class="all campus" alt="">
-                        <img src="assets/img/history/campus/work1.JPG" class="all work" alt="">
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/campus/1735982229861.JPG" class="all campus" alt="">
+                            <div class="detail-image">
+                                <span class="title">Kadiv Prodi PKJ</span>
+                                <span class="date">Tahun 2023</span>
+                                <p>Menjabat kepengurusan Organisasi BEM periode 2023/2024 menjadi Ketua Divisi Prodi
+                                    Pemeliharaan Komputer Jaringan.</p>
+                            </div>
+                        </div>
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/campus/1735982229850.JPG" class="all campus" alt="">
+                            <div class="detail-image">
+                                <span class="title">Juara 2 IOT</span>
+                                <span class="date">Tahun 2024</span>
+                                <p>Ikut berpartisipasi dalam perlombaan Internet Of Things di Kampus Akademi Komunitas
+                                    Negeri Pacitan.</p>
+                            </div>
+                        </div>
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/work/1735982273946.jpg" class="all work" alt="">
+                            <div class="detail-image">
+                                <span class="title">Admin Aplikasi</span>
+                                <span class="date">Tahun 2024</span>
+                                <p>Bekerja di Bappeda Litbang Kabupaten Pacitan menjadi admin aplikasi pendataan inovasi
+                                    inovasi yang ada di Pacitan.</p>
+                            </div>
+                        </div>
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/work/1735982273975.jpg" class="all work" alt="">
+                            <div class="detail-image">
+                                <span class="title">Panitia PIA</span>
+                                <span class="date">Tahun 2024</span>
+                                <p>Menjadi panitia Pacitan Inovation Award Tahun 2024 pada kategori ASN.</p>
+                            </div>
+                        </div>
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/campus/cumlaude.jpg" class="all campus" alt="">
+                            <div class="detail-image">
+                                <span class="title">Lulusan Cumlaude</span>
+                                <span class="date">Tahun 2024</span>
+                                <p>Mendapat predikat Cumlaude pada kelulusan Wisuda Akademi Komunitas Negeri Pacitan
+                                    yang ke-11.</p>
+                            </div>
+                        </div>
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/work/1735982273915.jpg" class="all work" alt="">
+                            <div class="detail-image">
+                                <span class="title">Puncak Penganugerahan PIA</span>
+                                <span class="date">Tahun 2024</span>
+                                <p>Menjadi salah satu panitia penyelenggara Malam Puncak Penganugerahan PIA dengan
+                                    dihadiri Bapak Bupati Pacitan dan Kepala BAPPEDA Litbang.</p>
+                            </div>
+                        </div>
+
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/work/1735982273961.jpg" class="all work" alt="">
+                            <div class="detail-image">
+                                <span class="title">Tim PIA & Tim Juri</span>
+                                <span class="date">Tahun 2024</span>
+                                <p>Rapat koordinasi penilaian Pacitan Inovation Award dengan dihadiri Asisten
+                                    Pemerintahan, Direktur AKN Pacitan, Ketua STKIP, dan Dosen STKIP sebagai Juri
+                                    Penilaian PIA.</p>
+                            </div>
+                        </div>
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/work/1735982274011.png" class="all work" alt="">
+                            <div class="detail-image">
+                                <span class="title">Tim Magang e-Musrenbang</span>
+                                <span class="date">Tahun 2024</span>
+                                <p>Tim pembuat website aplikasi admin pendataan dan pengambilan keputusan dalam kegiatan
+                                    Musrenbang Kabupaten Pacitan.</p>
+                            </div>
+                        </div>
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/campus/WhatsApp Image 2025-01-04 at 17.41.58_ed832f14.jpg"
+                                class="all campus" alt="">
+                            <div class="detail-image">
+                                <span class="title">Koordinator Penegak Kedisiplinan</span>
+                                <span class="date">Tahun 2024</span>
+                                <p>Menjadi Koordinator Panitia Penegak Kedisiplinan dalam Kegiatan PKKMB Akademi
+                                    Komunitas Negeri Pacitan.</p>
+                            </div>
+                        </div>
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/campus/1735982229794.JPG" class="all campus" alt="">
+                            <div class="detail-image">
+                                <span class="title">Badan Eksekutif Mahasiswa</span>
+                                <span class="date">Tahun 2023</span>
+                                <p>Pengesahan dan sekaligus pelantikan jabatan kepada Angkatan 1 BEM Akademi Komunitas
+                                    Negeri Pacitan.</p>
+                            </div>
+                        </div>
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/campus/3.JPG" class="all campus" alt="">
+                            <div class="detail-image">
+                                <span class="title">Koordinator EXPO</span>
+                                <span class="date">Tahun 2023</span>
+                                <p>Menjadi koordinator Prodi PKJ dalam event EXPO ke-1 Akademi Komunitas Negeri Pacitan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image-item" data-aos="zoom-in">
+                            <img src="assets/img/history/work/1735982274024.jpg" class="all work" alt="">
+                            <div class="detail-image">
+                                <span class="title">Tim Magang BAPPEDA</span>
+                                <span class="date">Tahun 2024</span>
+                                <p>Tim Magang dari Mahasiswa Akademi Komunitas Negeri Pacitan di BAPPEDA Litbang
+                                    Kabupaten Pacitan.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -337,10 +431,11 @@
                     <span>Quotes</span>
                 </div>
                 <div class="description-quote">
-                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati pariatur consequuntur, unde
-                            repellendus saepe optio veniam facere ducimus accusantium odit alias impedit consectetur?
-                            Rem,
-                            voluptatum? Illum libero minima magnam in? </i></p>
+                    <p><i>" Menurut ku tidak ada yang salah dari sebuah pilihan, lu mau jadi karyawan itu hak lu, lu mau
+                            jadi musisi itu hak lo, mau jadi pengangguran itu hak lo, tidak ada yang salah dengan
+                            pilihan, yang salah adalah ketika lu memilih kemudian lu mengeluh dan yang bodoh adalah
+                            ketika mengeluh tidak mencoba pilihan lain."</i></p>
+                            <span>- Dzawin Nur -</span>
                 </div>
             </div>
         </section>
@@ -357,7 +452,7 @@
                             <li><i class=" tabContact fa-regular fa-envelope" data-id="gmail"></i></li>
                         </ul>
                     </div>
-                    <form action="" id="whatsapp" class="active">
+                    <form action="" id="whatsapp" onsubmit="sendWhatsapp()" class="active">
                         <div class="input-contact">
                             <label for="name">Name</label>
                             <input type="text" class="input-name" placeholder="Masukkan nama anda">
@@ -371,15 +466,15 @@
                     <form action="" id="gmail">
                         <div class="input-contact">
                             <label for="email">From</label>
-                            <input type="email" class="input-name" placeholder="Masukkan email anda">
+                            <input type="email" class="input-name" placeholder="Masukkan email anda" disabled>
                         </div>
                         <div class="input-contact">
                             <label for="email">To</label>
-                            <input type="email" class="input-name" value="fendikaedo@gmail.com" disabled>
+                            <input type="email" class="input-name" disabled>
                         </div>
                         <div class="input-contact">
                             <label for="message">Message</label>
-                            <input type="text" class="input-message" placeholder="Masukkan pesan anda">
+                            <input type="text" class="input-message" placeholder="Masukkan pesan anda" disabled>
                         </div>
                         <button type="submit">
                             Send
